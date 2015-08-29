@@ -26,9 +26,7 @@ int main()
 	int n;
 	scanf("%d", &n);
 	if(judge(n))
-	{
 		printf("Input is a prime number.");
-	}
 	else
 		printf("Input isn't a prime number.");
 	return 0;
