@@ -7,10 +7,10 @@
 
 #include <stdio.h> 
 #include <stdlib.h>
-#define N 8
+#define N 9
 
-int A[9] = {0, 9, 4, 5, 2, 1, 7, 4, 6};
-int B[9] = {};
+int A[10] = {0, 9, 4, 5, 2, 1, 7, 4, 6, 3};
+int B[10] = {};
 int Merge(int *A, int p, int q, int r)
 {
 	int s, t, k;
