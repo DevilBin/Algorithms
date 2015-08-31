@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #define N 10
 
-int H[11] = {0, 1, 17, 9, 10, 11, 4, 5, 3, 7, 5};//for test i is 2
+int H[11] = {0, 20, 3, 9, 10, 11, 4, 5, 3, 7, 5};//for test i is 2
 
 int main()
 {
