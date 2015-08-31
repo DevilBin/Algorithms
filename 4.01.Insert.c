@@ -20,8 +20,8 @@ void SiftUp(int *H, int i)
 		if(H[i] > H[i / 2])
 		{
 			temp = H[i];
-			H[i] = H[i /2];
-			H[i /2 ] = temp;
+			H[i] = H[i / 2];
+			H[i / 2 ] = temp;
 		}
 		else
 			done = 1;
