@@ -36,7 +36,7 @@ void MakeHeap(int *H)
 {
 	int i; 
 	n = N;
-	for(i = n / 2; i >= 1; i --)
+	for(i = n / 2; i >= 1; --i)
 	{
 		SiftDown(H, i);
 	}
@@ -46,7 +46,7 @@ int main()
 {
 	int j, temp;
 	MakeHeap(H);
-	for(j = N; j >= 2; j--)
+	for(j = N; j >= 2; --j)
 	{
 		temp = H[1];
 		H[1] = H[j];
@@ -54,7 +54,7 @@ int main()
 		n = n -1;
 		SiftDown(H, 1);
 	}
-	for(j = 1; j <= N; j ++)
+	for(j = 1; j <= N; ++j)
 	{
 		printf("%d ", H[j]);
 	}

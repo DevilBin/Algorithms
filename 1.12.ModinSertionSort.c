@@ -37,18 +37,18 @@ int ModbinS(int *A, int n, int x)
 int main()
 {
 	int i, j, k, x;
-	for(i = 2;i <= N;i ++)
+	for(i = 2; i <= N; ++i)
 	{
 		x = A[i];
 		k = ModbinS(A, i - 1, x);
-		for(j = i - 1; j >= k; j --)
+		for(j = i - 1; j >= k; --j)
 		{
 			A[j + 1] = A[j];
 
 		}
 		A[k] = x;
 	}
-	for(i = 1; i <= N; i ++)
+	for(i = 1; i <= N; ++i)
 	{
 		printf("%d ", A[i]);
 	}

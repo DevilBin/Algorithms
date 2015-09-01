@@ -36,11 +36,11 @@ int main()
 {
 	int i;
 	n = N;
-	for(i = n / 2; i >= 1; i --)
+	for(i = n / 2; i >= 1; --i)
 	{
 		SiftDown(H, i);
 	}
-	for(i = 1; i <= N; i ++)
+	for(i = 1; i <= N; ++i)
 	{
 		printf("%d ", H[i]);
 	}

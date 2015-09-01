@@ -36,7 +36,7 @@ int main()
 	n = N + 1;
 	H[n] = x;
 	SiftUp(H , n);
-	for(i = 1; i <= n; i ++)
+	for(i = 1; i <= n; ++i)
 	{
 		printf("%d ", H[i]);
 	}

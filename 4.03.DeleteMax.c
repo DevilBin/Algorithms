@@ -71,7 +71,7 @@ int main()
 	int i, x;
 	x = H[1];
 	Delete(H, 1);
-	for(i = 1; i <= n; i ++)
+	for(i = 1; i <= n; ++i)
 	{
 		printf("%d ", H[i]);
 	}

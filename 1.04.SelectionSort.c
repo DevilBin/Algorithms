@@ -13,10 +13,10 @@ int A[15] = {0, 17, 28, 10, 4, 1, 22, 15, 27, 23, 5, 32, 12, 39, 35};
 int main()
 {
 	int i, j, k; int temp;
-	for(i = 1;i < N;i ++)
+	for(i = 1;i < N; ++i)
 	{
 		k = i;
-		for(j = i + 1;j <= N;j ++)
+		for(j = i + 1;j <= N; ++j)
 		{
 			if(A[j] < A[k])
 			{
@@ -30,7 +30,7 @@ int main()
 			A[k] = temp;
 		}
 	}
-	for(i = 1;i <= N;i ++)
+	for(i = 1;i <= N; ++i)
 	{
 		printf("%d ", A[i]);
 	}

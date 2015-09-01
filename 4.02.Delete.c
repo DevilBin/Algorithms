@@ -59,7 +59,7 @@ int main()
 	n = n - 1;
 	if(i == n + 1)
 	{
-		for(j = 1; j <= n; j ++)
+		for(j = 1; j <= n; ++j)
 			printf("%d ", H[j]);
 	}
 	else
@@ -69,7 +69,7 @@ int main()
 			SiftUp(H, i);
 		else
 			SiftDown(H, i);
-		for(j = 1; j <= n; j ++)
+		for(j = 1; j <= n; ++j)
 			printf("%d ", H[j]);
 	}
 	return 0;

@@ -28,7 +28,7 @@ int main()
 			done = 1;
 		i = i / 2;
 	}
-	for(i = 1; i <= N; i ++)
+	for(i = 1; i <= N; ++i)
 	{
 		printf("%d ", H[i]);
 	}

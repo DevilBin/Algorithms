@@ -13,7 +13,7 @@ int A[15] = {0, 17, 28, 10, 4, 1, 22, 15, 27, 23, 5, 32, 12, 39, 35};
 int main()
 {
 	int i, j, x;
-	for(i = 2;i <= N;i ++)
+	for(i = 2;i <= N; ++i)
 	{
 		x = A[i];
 		j = i - 1;
@@ -24,7 +24,7 @@ int main()
 		}
 		A[j + 1] = x;
 	}
-	for(i = 1;i <= N;i ++)
+	for(i = 1;i <= N; ++i)
 	{
 		printf("%d ", A[i]);
 	}

@@ -30,7 +30,7 @@ int main()
 		else
 			done = 1;
 	}
-	for(i = 1; i <= N; i ++)
+	for(i = 1; i <= N; ++i)
 	{
 		printf("%d ", H[i]);
 	}

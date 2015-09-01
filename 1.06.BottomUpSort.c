@@ -72,7 +72,7 @@ int main()
 		if(i + s < N)
 			Merge(A, i + 1, i + s, N);
 	}
-	for(i = 0; i <= N; i ++)
+	for(i = 1; i <= N; ++i)
 	{
 		printf("%d ", A[i]);
 	}

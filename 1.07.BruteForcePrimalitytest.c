@@ -13,7 +13,7 @@ int judge(int n)
 {
 	int j, s;
 	s = sqrt(n);
-	for(j = 2; j < s; j++)
+	for(j = 2; j < s; ++j)
 	{
 		if(n % j == 0)
 			return 0;

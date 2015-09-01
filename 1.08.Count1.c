@@ -15,7 +15,7 @@ int main()
 	scanf("%d", &n);
 	while(n >= 1)
 	{
-		for(j = 1; j <= n; j ++)
+		for(j = 1; j <= n; ++j)
 		{
 			count = count + 1;
 		}
