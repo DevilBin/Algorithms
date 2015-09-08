@@ -16,13 +16,9 @@ int Expand(int n)
 	while(n != 0)
 	{
 		if(n % 2 == 0)
-		{
 			str[i] = 0;
-		}
 		else
-		{
 			str[i] = 1;
-		}
 		n = n / 2;
 		i++;
 	}
@@ -38,9 +34,7 @@ int Exp(int x, int n)
 	{
 		y = y * y;
 		if(str[j] == 1)
-		{
 			y = x * y;
-		}
 	}
 	return y;
 }
