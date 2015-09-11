@@ -14,23 +14,23 @@ int P[5][2] = {{0}, {0, 1}, {1, 1}, {2, 1}, {3, 1}};
 
 int main()
 {
-	int i, x, y, w, root;
-	scanf("%d", &x);
-	y = x;
-	while(P[y][0] != 0)
-	{
-		y = P[y][0];
-	}
-	root = y; y = x;
-	while(P[y][0] != 0)
-	{
-		w = P[y][0];
-		P[y][0] = root;
-		y = w;
-	}
-	for(i = 1; i <= N; ++i)
-	{
-		printf("%d ", P[i][0]);
-	}
-	return root;
+    int i, x, y, w, root;
+    scanf("%d", &x);
+    y = x;
+    while(P[y][0] != 0)
+    {
+        y = P[y][0];
+    }
+    root = y; y = x;
+    while(P[y][0] != 0)
+    {
+        w = P[y][0];
+        P[y][0] = root;
+        y = w;
+    }
+    for(i = 1; i <= N; ++i)
+    {
+        printf("%d ", P[i][0]);
+    }
+    return root;
 }

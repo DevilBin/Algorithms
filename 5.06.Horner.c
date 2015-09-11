@@ -14,14 +14,14 @@ int str[6] = {0, 4, 3, 5, 6, 1};
 
 int main()
 {
-	int p, j, x;
-	scanf("%d", &x);
-	p = str[1];
-	for(j = 1; j <= N - 1; ++j)
-	{
-		p = x * p + str[j + 1];
-	}
-	printf("%d", p);
-	return 0;
+    int p, j, x;
+    scanf("%d", &x);
+    p = str[1];
+    for(j = 1; j <= N - 1; ++j)
+    {
+        p = x * p + str[j + 1];
+    }
+    printf("%d", p);
+    return 0;
 }
 

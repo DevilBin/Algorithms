@@ -10,16 +10,16 @@
 
 int main()
 {
-	int n, j, count;
-	count = 0;
-	scanf("%d", &n);
-	while(n >= 1)
-	{
-		for(j = 1; j <= n; ++j)
-		{
-			count = count + 1;
-		}
-		n = n / 2;
-	}
-	return count;
+    int n, j, count;
+    count = 0;
+    scanf("%d", &n);
+    while(n >= 1)
+    {
+        for(j = 1; j <= n; ++j)
+        {
+            count = count + 1;
+        }
+        n = n / 2;
+    }
+    return count;
 }

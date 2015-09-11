@@ -11,21 +11,21 @@
 
 int main()
 {
-	int n, i, j, k;
-	int sum[100] = {};
-	scanf("%d", &n);
-	k = sqrt(n);
-	for(j = 1; j <= k; ++j)
-	{
-		sum[j] = 0;
-		for(i = 1; i <= j * j; ++i)
-		{
-			sum[j] = sum[j] + i;
-		}
-	}
-	for(i = 1; i < k; ++i)
-	{
-		printf("%d ", sum[i]);
-	}
-	return 0;
+    int n, i, j, k;
+    int sum[100] = {};
+    scanf("%d", &n);
+    k = sqrt(n);
+    for(j = 1; j <= k; ++j)
+    {
+        sum[j] = 0;
+        for(i = 1; i <= j * j; ++i)
+        {
+            sum[j] = sum[j] + i;
+        }
+    }
+    for(i = 1; i < k; ++i)
+    {
+        printf("%d ", sum[i]);
+    }
+    return 0;
 }

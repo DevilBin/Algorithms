@@ -14,33 +14,33 @@ int A[15] = {0, 17, 28, 10, 4, 1, 22, 15, 27, 23, 5, 32, 12, 39, 35};
 
 void SeleSort(int i)
 {
-	int j, k, temp;
-	if(i < n)
-	{
-		k = i;
-		for(j = i + 1; j <= n; ++j)
-		{
-			if(A[j] < A[k])
-				k = j;
-		}
-		if(k != j)
-		{
-			temp = A[i];
-			A[i] = A[k];
-			A[k] = temp;
-		}
-		SeleSort(i + 1);
-	}
+    int j, k, temp;
+    if(i < n)
+    {
+        k = i;
+        for(j = i + 1; j <= n; ++j)
+        {
+            if(A[j] < A[k])
+                k = j;
+        }
+        if(k != j)
+        {
+            temp = A[i];
+            A[i] = A[k];
+            A[k] = temp;
+        }
+        SeleSort(i + 1);
+    }
 }
 
 int main()
 {
-	int i;
-	n = N;
-	SeleSort(1);
-	for(i = 1; i <= n; ++i)
-	{
-		printf("%d ", A[i]);
-	}
-	return 0;
+    int i;
+    n = N;
+    SeleSort(1);
+    for(i = 1; i <= n; ++i)
+    {
+        printf("%d ", A[i]);
+    }
+    return 0;
 }

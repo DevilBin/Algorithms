@@ -14,29 +14,29 @@ int A[15] = {0, 17, 28, 10, 4, 1, 22, 15, 27, 23, 5, 32, 12, 39, 35};
 
 void InseSort(int i)
 {
-	int j, x;
-	if(i > 1)
-	{
-		x = A[i];
-		InseSort(i - 1);
-		j = i - 1;
-		while(j > 0 && A[j] > x)
-		{
-			A[j + 1] = A[j];
-			j = j - 1;
-		}
-		A[j + 1] = x;
-	}
+    int j, x;
+    if(i > 1)
+    {
+        x = A[i];
+        InseSort(i - 1);
+        j = i - 1;
+        while(j > 0 && A[j] > x)
+        {
+            A[j + 1] = A[j];
+            j = j - 1;
+        }
+        A[j + 1] = x;
+    }
 }
 
 int main()
 {
-	int i;
-	n = N;
-	InseSort(n);
-	for(i = 1; i <= n; ++i)
-	{
-		printf("%d ", A[i]);
-	}
-	return 0;
+    int i;
+    n = N;
+    InseSort(n);
+    for(i = 1; i <= n; ++i)
+    {
+        printf("%d ", A[i]);
+    }
+    return 0;
 }

@@ -10,16 +10,16 @@
 
 int main()
 {
-	int n, m, i, j, count;
-	count = 0;
-	scanf("%d", &n);
-	for(i = 1; i <= n; ++i)
-	{
-		m = n / i;
-		for(j = 1; j <= m; ++j)
-		{
-			count = count + 1;
-		}
-	}
-	return count;
+    int n, m, i, j, count;
+    count = 0;
+    scanf("%d", &n);
+    for(i = 1; i <= n; ++i)
+    {
+        m = n / i;
+        for(j = 1; j <= m; ++j)
+        {
+            count = count + 1;
+        }
+    }
+    return count;
 }

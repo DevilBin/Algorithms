@@ -11,23 +11,23 @@
 
 int judge(int n)
 {
-	int j, s;
-	s = sqrt(n);
-	for(j = 2; j < s; ++j)
-	{
-		if(n % j == 0)
-			return 0;
-	}
-	return 1;
+    int j, s;
+    s = sqrt(n);
+    for(j = 2; j <= s; ++j)
+    {
+        if(n % j == 0)
+            return 0;
+    }
+    return 1;
 }
 
 int main()
 {
-	int n;
-	scanf("%d", &n);
-	if(judge(n))
-		printf("Input is a prime number.");
-	else
-		printf("Input isn't a prime number.");
-	return 0;
+    int n;
+    scanf("%d", &n);
+    if(judge(n))
+        printf("Input is a prime number.");
+    else
+        printf("Input isn't a prime number.");
+    return 0;
 }
