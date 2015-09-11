@@ -1,8 +1,8 @@
 /*************************************************************************
-	> File Name: 5.07.Permutations1.c
+	> File Name: 5.08.Permutations2.c
 	> Author: DevilBin 
 	> Mail: whu.evil.binary@gmail.com 
-	> Created Time: Thu 10 Sep 2015 21:39:11 PM CST
+	> Created Time: Fri 11 Sep 2015 13:24:42 PM CST
  ************************************************************************/
 
 #include <stdio.h> 
@@ -10,10 +10,10 @@
 
 int n;
 int P[100] = {};
-void Perm1(int m)
-{	
-	int i, j; int temp;
-	if(m == n)
+void Perm2(int m)
+{
+	int i, j; 
+	if(m == 0)
 	{
 		for(i = 1; i <= n; ++i)
 		{
@@ -23,15 +23,14 @@ void Perm1(int m)
 	}
 	else
 	{
-		for(j = m; j <= n; ++j)
+		for(j = 1; j <= n; ++j)
 		{
-			temp = P[j];
-			P[j] = P[m];
-			P[m] = temp;
-			Perm1(m + 1);
-			temp = P[j];
-			P[j] = P[m];
-			P[m] = temp;
+			if(P[j] == 0)
+			{
+				P[j] = m;
+				Perm2(m - 1);
+				P[j] = 0;
+			}
 		}
 	}
 }
@@ -42,8 +41,8 @@ int main()
 	scanf("%d", &n);
 	for(j = 1; j <= n; ++j)
 	{
-		P[j] = j;
+		P[j] = 0;
 	}
-	Perm1(1);
+	Perm2(n);
 	return 0;
 }
