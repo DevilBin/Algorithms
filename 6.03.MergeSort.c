@@ -1,8 +1,8 @@
 /*************************************************************************
-	> File Name: 1.06.BottomUpSort.c
+	> File Name: 6.03.MergeSort.c
 	> Author: DevilBin 
 	> Mail: whu.evil.binary@gmail.com 
-	> Created Time: Fri 28 Aug 2015 03:32:59 PM CST
+	> Created Time: Sat 12 Sep 2015 12:07:44 PM CST
  ************************************************************************/
 
 #include <stdio.h> 
@@ -56,26 +56,24 @@ int Merge(int *A, int p, int q, int r)
 	return 0;
 }
 
+int Mersort(int *A, int low, int high)
+{
+    int mid;
+    if(low < high)
+    {
+        mid = (low + high) / 2;
+        Mersort(A, low, mid);
+        Mersort(A, mid + 1, high);
+        Merge(A, low, mid, high);
+    }
+    return 0;
+}
+
 int main()
 {
-    int t, i, s;
-    t = 1;
-    while(t < N)
-    {
-        s = t;
-        i = 0;
-        t = 2 * s; 
-        while(i + t <= N)
-        {
-            Merge(A, i + 1, i + s, i + t);
-            i = i + t;
-        }
-        if(i + s < N)
-            Merge(A, i + 1, i + s, N);
-    }
+    int i;
+    Mersort(A, 1, N);
     for(i = 1; i <= N; ++i)
-    {
         printf("%d ", A[i]);
-    }
     return 0;
 }
