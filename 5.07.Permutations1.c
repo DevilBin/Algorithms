@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 int n;
-int P[100] = {};
+int P[100] = {0};
 void Perm1(int m)
 {	
     int i, j; int temp;

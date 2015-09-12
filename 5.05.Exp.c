@@ -8,7 +8,7 @@
 #include <stdio.h> 
 #include <stdlib.h>
 
-int str[100] = {};
+int str[100] = {0};
 
 int Expand(int n)
 {

@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 int A[15] = {0, 1, 4, 5, 17, 28, 39, 10, 12, 15, 22, 23, 27, 32, 35};//for test,q is 6
-int B[15] = {};
+int B[15] = {0};
 
 int main()
 {

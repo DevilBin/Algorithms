@@ -10,7 +10,7 @@
 #define N 9
 
 int A[10] = {0, 9, 4, 5, 2, 1, 7, 4, 6, 3};
-int B[10] = {0};
+int B[10] = {};
 
 int Merge(int *A, int p, int q, int r)
 {
