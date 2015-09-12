@@ -16,9 +16,7 @@ int Binse(int low, int high)
 {
     int mid;
     if(low > high)
-    {
         return 0;
-    }
     else
     {
         mid = (low + high) / 2;
