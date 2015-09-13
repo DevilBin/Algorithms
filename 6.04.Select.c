@@ -79,7 +79,7 @@ int Select(int *A, int low, int high, int k)
     p = high - low + 1;
     for(i = low; i <= high; ++i)
         str[i] = A[i];
-    if(p < 6)
+    if(p < 6)//6 is only for test. In fact, p < 44.
     {
         Mersort(A, low, high);
         return A[k];
