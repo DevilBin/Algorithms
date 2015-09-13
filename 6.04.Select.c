@@ -72,11 +72,10 @@ int Mersort(int *A, int low, int high)
 
 int Select(int *A, int low, int high, int k)
 {
-    int str[N]; 
     int i, j, p, q, mm;
-    int A1[N]; int a1 = 0; 
-    int a2 = 0;
-    int A3[N]; int a3 = 0;
+    int str[N], A1[N], A3[N]; 
+    int a1, a2, a3;
+    a1 = a2 = a3 =0;
     p = high - low + 1;
     for(i = low; i <= high; ++i)
         str[i] = A[i];
@@ -106,7 +105,7 @@ int Select(int *A, int low, int high, int k)
             {
                 a2++;
             }
-            else if(str[i] > mm)
+            else
             {
                 a3++;
                 A3[a3] = str[i];
