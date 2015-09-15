@@ -10,7 +10,7 @@
 #include <math.h>
 #define N 8
 
-int S[9][2] = {{0, 0}, {1, 2}, {0, 5}, {-3, -2}, {3, 4}, {2, -1}, {-2, 0}, {4, 2}, {-1, -3}};
+int S[9][2] = {{0, 0}, {1, 2}, {0, 5}, {-3, -2}, {3, -4}, {2, 7}, {-2, 0}, {4, 2}, {-1, -3}};
 int Y[9][2] = {{0}};
 int T[9][2] = {{0}};
 
@@ -94,14 +94,14 @@ double Cp(int low, int high)
     k = 0;
     for(i = 1; i <= N; ++i)
     {
-        if(Dist(Y, S, i, mid) < Q)
+        if(abs(Y[i][0] - S[mid][0]) < Q)
         {
             k = k + 1;
             T[k][0] = Y[i][0];
             T[k][1] = Y[i][1];
         }
     }
-    Q0 = 2 * Q;
+    Q0 = 2 * Q;//I think Q0 = Q is better than Q0 = 2 * Q.
     int m;
     for(i = 1; i <= k - 1; ++i)
     {
