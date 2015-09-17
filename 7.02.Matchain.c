@@ -7,6 +7,7 @@
 
 #include <stdio.h> 
 #include <stdlib.h>
+#include <limits.h>
 #define N 5
 
 int R[12] = {0, 5, 10, 4, 6, 10, 2};
@@ -32,7 +33,7 @@ int Match()
         for(i = 1; i <= N - d; ++i)
         {
             j = i + d;
-            C[i][j] = 2147483647;
+            C[i][j] = INT_MAX;
             for(k = i + 1; k <= j; ++k)
             {
                 C[i][j] = min(C[i][j], C[i][k - 1] + C[k][j] + R[i] * R[k] * R[j + 1]);
