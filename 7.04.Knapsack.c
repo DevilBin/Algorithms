@@ -33,11 +33,12 @@ int Knapsack()
     {
         for(j = 1; j <= C; ++j)
         {
-            V[i][j] = V[i - 1][j];
             if(S[i] <= j)
             {
-                V[i][j] = Max(V[i][j], V[i - 1][j -S[i]] + v[i]);
+                V[i][j] = Max(V[i - 1][j], V[i - 1][j -S[i]] + v[i]);
             }
+            else
+                V[i][j] = V[i - 1][j];
         }
     }
     return V[N][C];
