@@ -19,6 +19,8 @@ int main()
     while(low <= high && j == 0)
     {
         mid = (low + high) / 2;
+        /** This is not perfect, when low or high much higher than 2^32???
+            so "mid = ((unsigned int)low + (unsigned int)high) >> 1" is better **/
         if(x == A[mid])
         {
             j = mid;
