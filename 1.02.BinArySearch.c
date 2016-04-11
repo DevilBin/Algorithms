@@ -1,5 +1,5 @@
 /*************************************************************************
-	> File Name: 1.02.BinArySearch.c
+	> File Name: 1.02.BinarySearch.c
 	> Author: DevilBin 
 	> Mail: whu.evil.binary@gmail.com 
 	> Created Time: Thu 27 Aug 2015 03:29:22 PM CST

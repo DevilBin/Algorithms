@@ -1,5 +1,5 @@
 /*************************************************************************
-	> File Name: 1.05.InsertSort.c
+	> File Name: 1.05.InsertionSort.c
 	> Author: DevilBin 
 	> Mail: whu.evil.binary@gmail.com 
 	> Created Time: Fri 28 Aug 2015 08:40:25 AM CST

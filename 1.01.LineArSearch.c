@@ -1,5 +1,5 @@
 /*************************************************************************
-	> File Name: 1.01.LineArSearch.c
+	> File Name: 1.01.LinearSearch.c
 	> Author: DevilBin 
 	> Mail: whu.evil.binary@gmail.com 
 	> Created Time: Wed 26 Aug 2015 08:46:12 PM CST
